@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { HorseList } from "./Components";
+import { HorseList } from "./HorseList";
 
 test("renders horse list", () => {
   render(<HorseList />);

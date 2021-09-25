@@ -1,5 +1,4 @@
-import "./App.css";
-import HorseList from "./Components/HorseList/horse-list";
+import { HorseList } from "./Components";
 
 function App() {
   return <HorseList />;
