@@ -32,3 +32,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Assumptions
 
 1. Assume that we will always get back at least one horse.
+2. Assume that we will always get back less than horses [pagination ommitted for now].
+3. Assume that profile, favouriteFood, physical, height and weight can be empty.

@@ -5,11 +5,11 @@ export interface Horse {
 }
 
 interface Profile {
-  favouriteFood: string;
-  physical: Physical;
+  favouriteFood?: string;
+  physical?: Physical;
 }
 
 interface Physical {
-  height: number;
-  weight: number;
+  height?: number;
+  weight?: number;
 }

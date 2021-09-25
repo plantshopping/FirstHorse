@@ -4,14 +4,18 @@ import { Horse } from "../../Types/Horse";
 
 interface HorseListProps {
   horses: Horse[];
+  onHorseClicked(horseId: string): void;
 }
 
-export function HorseList({ horses }: HorseListProps): ReactElement {
+export function HorseList({
+  horses,
+  onHorseClicked,
+}: HorseListProps): ReactElement {
   return (
     <List>
       {horses.map((horse) => (
         <ListItem disablePadding key={horse.id}>
-          <ListItemButton>
+          <ListItemButton onClick={() => onHorseClicked(horse.id)}>
             <ListItemText primary={horse.name} />
           </ListItemButton>
         </ListItem>
