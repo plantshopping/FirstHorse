@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { HorseList } from "./Components";
+import App from "./App";
 
-test("renders horse list", () => {
-  render(<HorseList />);
-  const linkElement = screen.getByText(/TODO Horses will show here/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders without crashing", () => {
+  render(<App />);
+  const app = screen.getByRole("main");
+  expect(app).toBeTruthy();
 });
